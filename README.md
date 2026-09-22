@@ -20,7 +20,8 @@ Il file `FUNZIONI.py` contiene i parametri di configurazione e le funzioni utili
 | `POPOLAMENTO.py`       | Decomprime i file scaricati, estrae i documenti e popola la base di dati.                                                           |
 | `OPERAZIONI.py`        | Implementa ed esegue le operazioni previste sulla base di dati.                                                                     |
 | `FUNZIONI.py`          | Contiene i parametri di configurazione e le funzioni utilizzate dagli altri programmi.                                              |
-| `CONFRONTO.py`         | Confronta le prestazioni dell'implementazione basata sulla base di dati con un'implementazione analoga basata sul solo file system. |
+| `CONFRONTO.py`         | Imposta l'implementazione analoga basata sul solo file system.                                                                      |
+| `run_confronto.py`     | Confronta le prestazioni dell'implementazione basata sulla base di dati con un'implementazione analoga basata sul solo file system. |
 | `Guida_al_codice.docx` | Contiene una spiegazione dettagliata del funzionamento dei diversi file e delle funzioni implementate.                              |
 
 ---
@@ -87,7 +88,7 @@ Il file `CONFRONTO.py` permette di confrontare le prestazioni dell'implementazio
 Per eseguire il confronto:
 
 ```bash
-python CONFRONTO.py
+python run_confronto.py
 ```
 
 Il programma esegue le operazioni previste dalle due implementazioni e restituisce i risultati del confronto delle prestazioni.
@@ -133,7 +134,7 @@ POPOLAMENTO.py
 OPERAZIONI.py
 ```
 
-`CONFRONTO.py` può essere eseguito separatamente per effettuare il confronto delle prestazioni tra la soluzione basata sulla base di dati e quella basata sul file system.
+`run_confronto.py` può essere eseguito separatamente per effettuare il confronto delle prestazioni tra la soluzione basata sulla base di dati e quella basata sul file system.
 
 ---
 
