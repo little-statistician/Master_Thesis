@@ -28,12 +28,9 @@ Il file `FUNZIONI.py` contiene i parametri di configurazione e le funzioni utili
 
 ## Requisiti
 
-È necessario disporre di:
-
 * Python 3
-* una connessione a Internet, necessaria per il download dei dati da Common Crawl;
-* spazio sufficiente sul disco per i file scaricati, i documenti estratti e la base di dati.
-
+* una connessione ad Internet per il download dei dati da Common Crawl
+* spazio sufficiente su disco per i file scaricati, i documenti estratti e la base di dati
 Le eventuali librerie Python necessarie devono essere installate prima dell'esecuzione dei programmi.
 
 ---
@@ -49,7 +46,6 @@ python dowload_dati.py
 ```
 
 Il programma crea una cartella dedicata e scarica al suo interno i file compressi contenenti i dati provenienti da Common Crawl.
-
 I parametri utilizzati per il download sono definiti in `FUNZIONI.py`.
 
 ### 2. Popolamento della base di dati
