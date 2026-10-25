@@ -25,7 +25,7 @@ from warcio.archiveiterator import ArchiveIterator
 WET_FOLDER  = "dati_2025"
 LINGUE_FILE = "lingue_alfabeto_latino.txt"
 SCHEMA_PATH = "tabelle.sql"
-DB_PATH = "confronto.db"
+DB_PATH = "collezione.db"
 MIN_DIM  = 200 #dim minima del documento (Content-Length) per essere mantenuto
 K = 5 # lunghezza delle tegole
 NUM_HASHES = 300 # lunghezza della firma MinHash (numero di funzioni hash universali)
