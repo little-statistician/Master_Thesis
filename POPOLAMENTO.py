@@ -9,6 +9,7 @@ tegole, MinHash, bande, ecc.) sono importati da FUNZIONI.py.
 
 import sqlite3
 import time
+import os
 from concurrent.futures import ProcessPoolExecutor
 import FUNZIONI as F
 
