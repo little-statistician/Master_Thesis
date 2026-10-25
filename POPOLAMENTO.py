@@ -199,3 +199,4 @@ def popola_database():
 
 if __name__ == "__main__":
     popola_database()
+    print("DB creato in:", os.path.abspath(F.DB_PATH))
