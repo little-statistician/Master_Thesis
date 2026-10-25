@@ -27,14 +27,14 @@ pip install requests regex warcio
 
 ```bash
 python download_dati.py     # 1. scarica i file WET in dati_2025/
-python POPOLAMENTO.py       # 2. crea e popola prima_prova.db
+python POPOLAMENTO.py       # 2. crea e popola collezione.db
 python OPERAZIONI.py        # 3. esempi d'uso delle operazioni
 python run_confronto.py     # 4. benchmark SGBD vs file system
 ```
 
 I passi 1–3 vanno eseguiti in ordine. `run_confronto.py` è indipendente: lavora su un corpus sintetico e non richiede il download.
 
-> **Attenzione:** `run_confronto.py` elimina `prima_prova.db` e svuota `dati_fs/` prima di ogni run. Se serve conservare il database popolato dal passo 2, va copiato altrove prima.
+> **Attenzione:** `run_confronto.py` elimina `collezione.db` e svuota `dati_fs/` prima di ogni run. Se serve conservare il database popolato dal passo 2, va copiato altrove prima.
 
 ## Pipeline di elaborazione
 
@@ -110,7 +110,7 @@ Il confronto isola il solo effetto di persistenza e indicizzazione: i tempi sono
 | Percorso | Prodotto da |
 | --- | --- |
 | `dati_2025/*.warc.wet.gz` | `download_dati.py` |
-| `prima_prova.db` (più `-wal`, `-shm`) | `POPOLAMENTO.py` |
+| `collezione.db` (più `-wal`, `-shm`) | `POPOLAMENTO.py` |
 | `dati_fs/` | `CONFRONTO.py` / `run_confronto.py` |
 
 ## Documentazione
